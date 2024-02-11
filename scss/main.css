@@ -1,0 +1,461 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');
+
+
+/*Reset de estilos*/
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+/*Estilos CreativeLoopMood*/
+
+/*Estilos de la barra de navegacion*/
+header {
+    background-color: #000000;
+    /*negro*/
+    color: #FFFFFF;
+}
+
+header .bg-light {
+    background-color: black !important;
+}
+
+header .bg-light .header__logo {
+    height: 75px;
+    width: auto;
+    :hover{
+        color: #FFD700;
+    }
+}
+
+header .bg-light .navbar-toggler-icon {
+    width: 33px;
+    height: 33px;
+    /*background-color: #CA054D;*/
+    /*border: 1px solid #CA054D;*/
+    background-color: #ffd000;
+    border: 1px solid #ffd000;
+    border-radius: 5px;
+}
+.navbar-toggler {
+    background-color: #ffd000;
+}
+
+header .bg-light .nav-link.active {
+    color: white !important;
+    font-family: 'Monserrat', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    /*font-family: "Courier New", Courier, monospace;*/
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+header .bg-light .nav-link.active:hover {
+    color: #FFD700 !important;
+}
+
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.carousel-item img {
+    height: 68vh;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-item img {
+        height: 53vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-item img {
+        height: 35vh;
+    }    
+}
+
+.animation_text_1 {
+    opacity: 0;
+    padding: 20PX;
+}
+
+.animate {
+    animation: slideFromLeft 1s ease forwards;
+}
+
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: #FFF07C;
+
+    div {
+        text-align: center;
+        font-family: 'Montserrrat', sans-serif;
+        font-style: italic;
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%) scaleX(1);
+    }
+
+    50% {
+        transform: translateX(0) scaleX(1.5);
+    }
+
+    60% {
+        transform: translateX(0) scaleX(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+#servicios {
+    background-color: black;
+}
+
+/* .container_servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+/* .servicio{
+    margin: 20px;
+    border: 1px solid black ;
+    border-radius: 8px;
+    width: 290px;
+    height: 75vh;    
+    font-family: 'Montserrat',sans-serif;
+    font-style: italic;
+    background-color: white;
+
+    div{
+        padding: 10px;
+        
+    }
+}
+
+
+
+.servicio h3{
+    text-align: center;
+    font-size: 700;
+}
+.servicio li{
+    margin-right: 15px;
+    text-align: justify;
+    font-size: 400;
+} */
+
+.titulo_servicio {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+
+    h3 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        width: fit-content;
+        display: block;
+        padding: 5px 10px 5px 10px;
+        margin: 0 auto;
+    }
+}
+
+.tarjetas_servicio {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+
+    .tarjeta_servicio {
+        margin: 20px;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        display: block;
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tarjetas_servicio {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .tarjeta_servicio {
+        width: 70%;
+        /* Porcentaje del ancho del contenedor del carrusel */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tarjetas_servicio {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta_servicio {
+        width: 60%;
+        /* Porcentaje del ancho del contenedor del carrusel */
+    }
+}
+
+
+/*  */
+
+.titulo_1 {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        width: fit-content;
+        display: block;
+        padding: 5px 10px 5px 10px;
+        margin: 0 auto;
+        color: white;
+    }
+
+}
+
+
+#portafolio {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+.titulo_clientes {
+    text-align: center;
+    margin-bottom: 45px;
+    width: 100%;
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        width: fit-content;
+        display: block;
+        padding: 5px 10px 5px 10px;
+        margin: 0 auto;
+
+    }
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.slide_mini {
+    width: 150px;
+    height: 150px;
+}
+
+.slide_mini img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+/* Estilo adicional para ajustar el tamaño de las imágenes según el tamaño del carrusel */
+@media screen and (max-width: 768px) {
+    .slide_mini img {
+        width: 70%;
+        /* Porcentaje del ancho del contenedor del carrusel */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slide_mini img {
+        width: 42%;
+        /* Porcentaje del ancho del contenedor del carrusel */
+    }
+}
+
+
+@media (min-width: 768px) {
+    /*Header
+    .header .navbar-collapse {
+      justify-content: flex-end;
+    }*/
+}
+
+#nosotros {
+    background-color: darkgray;
+}
+
+.personal_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.personal_card {
+    width: 400px;
+    height: 350px;
+    margin-bottom: 20px;
+    font-family: 'Monserrat', sans-serif;
+    font-style: italic;
+}
+
+.personal_card img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+/* Estilo adicional para ajustar el tamaño de las imágenes según el tamaño del carrusel */
+@media screen and (max-width: 768px) {
+    .personal_card img {
+        width: 100%;
+        /* Porcentaje del ancho del contenedor del carrusel */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .personal_card img {
+        width: 100%;
+        /* Porcentaje del ancho del contenedor del carrusel */
+    }
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Monserrat', sans-serif;
+    font-style: italic;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Monserrat', sans-serif;
+    font-style: italic;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: 'Monserrat', sans-serif;
+    font-style: italic;
+}
+
+
+.boton_form {
+    background-color: #FFD700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Monserrat', sans-serif;
+    font-style: italic;
+}
+
+.boton_form:hover {
+    background-color: #ffd000;
+}
+
+.boton_form:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.boton_form:focus {
+    outline: none;
+}
+
+#mensaje {
+    height: 100px;
+    /* Altura fija para el campo de texto */
+}
+
+.titulo_contacto {
+    color: black !important;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.footer__logo {
+    margin: 5px 0px;
+    width: 70px;
+    height: 55px;
+}
+
+.footer ul {
+    margin: 5px 0px;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 0px 10px;
+}
+
+.footer ul li .logo_red_social {
+    width: 30px;
+    height: 30px;
+}
+
+.footer p {
+    color: white;
+}
